@@ -1,0 +1,46 @@
+.gradient__bg{
+    @apply from-[#002853] to-[#040c18] bg-gradient-to-tl;
+}
+
+.gradient__text{
+    background-clip: text;
+    background-image: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section{
+    &__padding{
+        @apply py-16 px-8 sm:px-16 xl:px-24; 
+    }
+    &__margin{
+        @apply my-16 mx-8 sm:mx-16 xl:mx-24;
+    }
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  

@@ -1,0 +1,60 @@
+.gpt3{
+
+    &__navbar{
+        @apply flex justify-between items-center p-8 md:py-8 md:px-16 lg:py-8 lg:px-16;
+        
+        & p {
+            @apply text-white text-px18 capitalize font-medium leading-[25px] cursor-pointer mr-1;
+        }
+
+        & button {
+            @apply py-2 px-6 bg-[#FF4820] font-medium rounded-[5px]
+             leading-[25px] text-px18 cursor-pointer text-white ml-2;
+        }
+
+        &-links{
+            @apply flex justify-start items-center;
+
+            &_logo{
+                @apply mr-8;
+
+                & img {
+                    width: 62.56px;
+                    height: 16.02px;
+                }
+            }
+
+            &_container{
+                @apply flex-row space-x-5 hidden lg:flex;
+            }
+        }
+
+        &-sign{
+            @apply hidden justify-end items-center sm:flex;
+        }
+
+        &-menu{
+            @apply ml-4 flex relative lg:hidden;
+
+            & svg{
+                cursor: pointer;
+            }
+
+            &_container{
+                @apply flex justify-end items-end flex-col text-end bg-colorFooter p-8 absolute top-10 right-0 mt-1
+                    min-w-[210px] rounded-[5px] shadow-md;
+                
+                & p{
+                    margin: 1rem 0;
+                 }
+
+                &-links{
+
+                    &-sign{
+                        @apply block sm:hidden;
+                    }
+                }
+            }
+        }
+    }
+}

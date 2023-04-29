@@ -1,7 +1,18 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{jsx, js, ts, tsx, scss}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        colorBg: '#040c18',
+        colorFooter: '#031b31',
+        colorBlog: '#042c54',
+        colorText: '#81AFDD',
+        colorSubtext: '#ff8A71'
+      },
+      fontSize: {
+        px18: '18px'
+      }
+    },
   },
   plugins: [],
 }

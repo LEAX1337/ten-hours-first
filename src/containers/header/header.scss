@@ -1,0 +1,53 @@
+.header {
+    @apply flex flex-col lg:flex-row;
+
+    &__content {
+        @apply flex-[1] flex justify-center items-start flex-col my-0 mx-8 
+        lg:mx-16;
+
+        & h1 {
+            @apply py-4 tracking-[-.04rem] text-4xl  md:text-5xl lg:text-6xl font-extrabold;
+        }
+
+        & p {
+            @apply text-xs md:text-sm lg:text-base text-colorText mt-6;
+        }
+    }
+
+    &__image{
+        @apply flex-[1] flex justify-center items-center mr-16;
+
+        & img {
+            @apply w-full h-full;
+        }
+    }
+}
+
+.content {
+
+    &__input {
+        @apply w-full mt-8 mr-0 mb-4 flex;
+
+        & input {
+            @apply flex-[2] w-full min-h-[50px] py-0 px-4 text-white text-xs md:text-sm lg:text-px18 bg-colorFooter rounded-l-[5px] border-2 border-colorFooter;
+        }
+
+        & button {
+            @apply flex-[.6] bg-[#FF4820] w-full text-xs md:text-sm lg:text-px18 
+            font-bold rounded-r-[5px] min-h-[50px] text-white cursor-pointer py-0 px-4 outline-none;
+        }
+    }
+
+    &__people {
+        @apply w-full flex flex-col md:flex-row justify-start items-center mt-8;
+
+        & img {
+            @apply w-[181.79px] h-10;
+        }
+
+        & p {
+            @apply m-0 md:ml-4 font-medium text-xs md:text-sm text-white text-center;
+        }
+    }
+
+}
