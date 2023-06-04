@@ -1,0 +1,31 @@
+.possibility {
+    @apply flex flex-col lg:flex-row;
+
+    &__image {
+        @apply flex-[1] flex justify-start items-center m-0 my-4 lg:m-0 lg:mr-4;
+
+        & img {
+            @apply w-full h-full;
+        }
+    }
+
+    &__content {
+        @apply flex-[1] flex flex-col justify-end items-start;
+
+        & h4 {
+            @apply text-colorText font-medium text-base mt-4 lg:mt-0;
+        }
+
+        & h4:last-child {
+            @apply  text-colorSubtext font-medium text-base;
+        }
+
+        & h1 {
+            @apply text-4xl font-extrabold my-4 lg:my-8;
+        }
+
+        & p {
+            @apply text-base text-colorText lg:mb-8 ;
+        }
+    }
+}

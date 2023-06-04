@@ -9,7 +9,7 @@
   --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
 }
 
-body{
-  font-family: 'Manrope', sans-serif;
-  @apply bg-colorBg;
+html, body{
+  font-family: 'Manrope', sans-serif; 
+  @apply bg-colorBg scroll-smooth;
 }

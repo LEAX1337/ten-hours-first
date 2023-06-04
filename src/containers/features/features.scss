@@ -1,0 +1,28 @@
+.features {
+    @apply w-full flex justify-between flex-col lg:flex-row;
+
+    &__heading {
+        @apply flex-[1] flex justify-start items-start flex-col text-left m-0 mb-8 lg:mr-20; 
+
+        & h1 {
+            @apply font-extrabold text-3xl md:text-4xl lg:text-5xl;
+        }
+
+        & p {
+            @apply text-base my-8 text-colorSubtext font-medium break-words;
+        }
+    }
+
+    &__container{
+        @apply flex-[1.5] flex justify-center items-center flex-col;
+
+        & .feature__title{
+            flex: 1;
+        } 
+
+        & .feature__text{
+            flex: 1;
+        }
+
+    }
+}

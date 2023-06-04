@@ -1,4 +1,4 @@
-import { Article, Brand, Cta, Feature, Navbar } from './components/index'
+import { Brand, Cta, Navbar } from './components/index'
 import { Footer, Blog, Features, Header, WhatGPT3, Possibility } from './containers/index'
 
 import './App.scss'

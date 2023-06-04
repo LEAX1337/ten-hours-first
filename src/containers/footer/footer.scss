@@ -1,0 +1,55 @@
+.footer {
+    @apply flex flex-col justify-center items-center bg-colorFooter;
+
+    &__heading {
+        @apply w-full text-center mb-12;
+
+        & h1 {
+            @apply font-extrabold text-3xl md:text-4xl lg:text-5xl tracking-[-0.04rem] text-center;
+        }
+    }
+
+    &__button {
+        @apply flex justify-center items-center p-4 mb-40 cursor-pointer border-[1px] border-white text-center;
+
+        & p {
+            @apply text-sm md:text-px18 box-border text-white;
+        }
+    }
+
+    &__links {
+        @apply flex justify-between items-start flex-wrap flex-col md:flex-row w-full text-left;
+
+        &-logo {
+            @apply flex flex-col;
+
+            & img {
+                @apply w-[118px] h-[30px] mb-4;
+            }
+            
+            & p {
+                @apply text-xs text-white;
+            }
+        }
+
+        &-container {
+            @apply max-w-max flex justify-between flex-col my-4 md:my-0;
+
+            & h2 {
+                @apply text-sm text-white mb-4;
+            }
+
+            & p {
+                @apply text-xs text-white my-2 cursor-pointer;
+            }
+        }
+    }
+
+    &__copy {
+        @apply mt-8 text-center w-full;
+
+        & p {
+            @apply text-xs text-white;
+        }
+    }
+}

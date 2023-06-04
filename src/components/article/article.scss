@@ -1,0 +1,26 @@
+.article {
+    @apply w-full h-full flex flex-col bg-colorFooter;
+
+    &__image {
+        @apply w-full h-full bg-colorFooter;
+
+        & img {
+            @apply w-full h-full;
+        }
+    }
+
+    &__content {
+        @apply flex flex-col justify-between py-4 px-6 h-full;
+
+        & p {
+            @apply font-bold text-xs text-white;
+        }
+        & p:last-child {
+            @apply cursor-pointer;
+        }
+
+        & h2 {
+            @apply font-extrabold text-px18 md:text-2xl text-white mb-20 cursor-pointer;
+        }
+    }
+}

@@ -1,9 +1,21 @@
 import React from 'react'
 import './article.scss'
 
-const Article = () => {
+const Article = ({ imgUrl, date, title }) => {
   return (
-    <div>Article</div>
+    <div className='article'>
+      <div className="article__image">
+        <img src={imgUrl} alt="Blog" />
+      </div>
+      <div className="article__content">
+        <div>
+          <p>{ date }</p>
+          <h2>{ title }</h2>
+        </div>
+
+        <p>Read Full Article</p>
+      </div>
+    </div>
   )
 }
 

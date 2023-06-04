@@ -1,1 +1,32 @@
-.blog{}
+.blog {
+    @apply flex flex-col gap-8;
+
+    &__heading {
+        @apply w-full text-left mb-20;
+
+        & h1 {
+            @apply font-extrabold text-3xl sm:text-4xl md:text-5xl tracking-[-0.04rem] py-2;
+        }
+    }
+
+    &__container {
+        @apply flex flex-col-reverse lg:flex-row;
+
+        &-groupA {
+            @apply flex-[0.75] my-8 mx-0 lg:my-0 lg:mr-8;
+
+            & .article{
+                @apply w-full md:w-[48%] lg:w-full;
+            }
+
+            & .article img {
+                @apply h-[250px] lg:w-full;
+            }
+        }
+
+        &-groupB {
+            @apply flex-[1] grid grid-cols-1 md:grid-cols-2 gap-8;
+        }
+
+    }
+}

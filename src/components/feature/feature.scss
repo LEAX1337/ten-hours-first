@@ -1,0 +1,24 @@
+.feature {
+    @apply w-full flex flex-wrap justify-between items-start my-2 m-0 md:m-4;
+
+    &__title {
+        @apply mr-8 mb-4;
+
+        & h1 {
+            @apply font-extrabold text-sm md:text-xl tracking-[-.04rem] text-white;
+        }
+        
+        & div {
+            background: var(--gradient-bar);
+            @apply w-10 h-1 mb-2 shadow-md;
+        }
+    }
+
+    &__text {
+        @apply max-w-[490px] flex;
+
+        & p {
+            @apply text-xs md:text-base font-medium text-colorText;
+        }
+    }
+}
